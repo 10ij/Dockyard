@@ -4,6 +4,12 @@ using Microsoft.Data.Sqlite;
 
 namespace Dockyard.Web.Data;
 
+// This does what setup.php used to do
+// Aswell as the entrypoint in docker, it was all a mess
+// DbUp is meant to automatically see new schema
+// Compare to current and then migrate
+// This file has DbUp but also handles db creation and setup
+
 public static class DatabaseMigrator
 {
     public static void EnsureMigrated(string connectionString)
