@@ -1,0 +1,78 @@
+##----------------------------------------------------------------------
+## .NET / Visual Studio
+##----------------------------------------------------------------------
+[Bb]in/
+[Oo]bj/
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+##----------------------------------------------------------------------
+## Build Outputs & Publishing
+##----------------------------------------------------------------------
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]uild/
+bld/
+[Pp]ublish/
+*.publishsettings
+
+## NuGet Packages & Restore Logs
+**/packages/*
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+.nuget/
+
+##----------------------------------------------------------------------
+## Operating System & Temporary Files
+##----------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# Logs & Diagnostics
+*.log
+*.sqlite-journal
+*.sqlite-wal
+logs/
+*.etl
+*.dump
+
+##----------------------------------------------------------------------
+## Dockyard Specific (Databases, Secrets & Local State)
+##----------------------------------------------------------------------
+# Local SQLite database files (keep migrations, ignore local data state)
+*.db
+*.db-shm
+*.db-wal
+data/
+*.sqlite
+
+# Local configuration overrides and secrets
+**/appsettings.Development.json
+**/appsettings.Local.json
+.env
+.env.*
+secrets.json

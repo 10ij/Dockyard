@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Dockyard.Web/Dockyard.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Dockyard.Tests/Dockyard.Tests.csproj" />
+  </Folder>
+</Solution>
