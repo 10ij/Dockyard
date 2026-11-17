@@ -1,7 +1,22 @@
+using Dockyard.Web.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// These blocks means invalid config halts the app from starting
+builder.Services
+    .AddOptions<OidcSettings>()
+    .Bind(builder.Configuration.GetSection(OidcSettings.SectionName))
+    .ValidateDataAnnotations()
+    .ValidateOnStart();
+ 
+builder.Services
+    .AddOptions<DockyardOptions>()
+    .Bind(builder.Configuration.GetSection(DockyardOptions.SectionName))
+    .ValidateDataAnnotations()
+    .ValidateOnStart();
 
 var app = builder.Build();
 
