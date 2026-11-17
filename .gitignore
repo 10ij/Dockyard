@@ -67,7 +67,6 @@ logs/
 *.db
 *.db-shm
 *.db-wal
-data/
 *.sqlite
 
 # Local configuration overrides and secrets
