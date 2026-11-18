@@ -16,6 +16,8 @@ public static class DatabaseMigrator
     {
         var csBuilder = new SqliteConnectionStringBuilder(connectionString);
         var dbDirectory = Path.GetDirectoryName(csBuilder.DataSource);
+        // If isnt not, if isnt not, if isnt not
+        // Surely theres a better way
         if (!string.IsNullOrWhiteSpace(dbDirectory))
         {
             Directory.CreateDirectory(dbDirectory);
@@ -38,6 +40,8 @@ public static class DatabaseMigrator
             .Build();
 
         var result = upgrader.PerformUpgrade();
+        
+        // if isnt success, no isnt not, just isnt
         if (!result.Successful)
         {
             throw new InvalidOperationException(
