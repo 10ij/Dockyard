@@ -14,6 +14,8 @@ And then it passes on the DB to DbUp
 
 Also compared the PHP app, no more raw SQL in my code files! The app reads seperate SQL files
 
+`Connection.cs` does the work that `db.php` would've done, but not in PHP, in C#, innovation
+
 ## 001_InitialSchema.sql
 
 This file differs a bit to the PHP one, so its snake_case now, as i've learnt it should be, postgres doesn't even by default store uppercase letters unless you quote them
