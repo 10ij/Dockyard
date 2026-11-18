@@ -32,3 +32,4 @@ Now uses standard UTC timestamps
 
 `container_permissions` links by name not ID, names are unique anyways, idk its not much of a difference 
 
+Added Write Ahead Logging
